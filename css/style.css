@@ -48,6 +48,10 @@ body {
   }
 }
 
+a:focus {
+  border: 3px solid goldenrod;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
