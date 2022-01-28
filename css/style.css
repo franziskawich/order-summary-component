@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 10 version
+*/
+
 :root {
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
@@ -9,7 +16,8 @@
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 h1,
@@ -26,7 +34,8 @@ img {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Red Hat Display', sans-serif;
   background-color: #dfe6fb;
 }
@@ -40,9 +49,14 @@ body {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .order-summary {
@@ -52,7 +66,8 @@ body {
   margin: 10% auto 3rem;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 1.2rem 0.75rem 0 #717fa61e;
+  -webkit-box-shadow: 0 1.2rem 0.75rem 0 #717fa61e;
+          box-shadow: 0 1.2rem 0.75rem 0 #717fa61e;
 }
 .order-summary__content {
   width: 83%;
@@ -99,7 +114,8 @@ body {
   font-size: 0.9rem;
   background-color: var(--bright-blue);
   color: white;
-  box-shadow: 0 1.2rem 0.6rem 0 #e6e8ef;
+  -webkit-box-shadow: 0 1.2rem 0.6rem 0 #e6e8ef;
+          box-shadow: 0 1.2rem 0.6rem 0 #e6e8ef;
   padding: 0.8rem 0;
   border-radius: 0.6rem;
 }
