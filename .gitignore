@@ -19,7 +19,7 @@
 .code-workspace
 
 # Ignore style-guide / README
-*.md
+style-guide.md
 
 # Ignore all .json files
 *.json
